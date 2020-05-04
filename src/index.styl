@@ -1,0 +1,103 @@
+body
+  margin 0
+  // background rgba(246,46,36,1)
+  // background -webkit-linear-gradient(top, rgba(246,46,36,1) 0%, rgba(255,54,121,1) 100%)
+  // background linear-gradient(to bottom, rgba(246,46,36,1) 0%, rgba(255,54,121,1) 100%)
+  height 100vh
+  color black
+  text-align center
+  display flex
+  align-items center
+  flex-direction column
+  justify-content center
+  overflow hidden
+  font-family sans-serif
+
+main
+  display flex
+  flex-direction column
+  justify-content center
+
+@keyframes Sat {
+  0%   {filter: saturate(.5)}
+  50%  {filter: saturate(2)}
+  100% {filter: saturate(.5)}
+}
+
+img
+  border-radius 12%
+  filter saturate(1)
+  animation-name Sat
+  animation-duration 10s
+  animation-iteration-count infinite
+  width 30vh
+  margin auto
+
+h1
+  letter-spacing 3px
+  font-size 3em
+  margin-bottom 2px
+  text-transform lowercase
+
+h2
+  letter-spacing 1px
+
+p
+  letter-spacing 1px
+  text-transform lowercase
+
+input
+  outline none
+  // width 50em
+  display block
+  // height 5em
+  text-align center
+  padding .3em
+  border 2px solid black
+  border-radius 50px
+  background none
+  opacity .6
+  // font-weight bold
+  color black
+  font-size 30px
+  margin 5px
+  margin-bottom 20px
+  text-transform lowercase
+
+  &:focus
+    opacity 1
+    &:hover
+      opacity 1
+
+  &:hover
+    opacity .8
+
+  &::placeholder
+    color black
+    font-family sans-serif
+
+button
+  outline none
+  border none
+  font-size 30px
+  border-radius 50px
+  padding-top 10px
+  padding-bottom 10px
+  padding-right 30px
+  padding-left 30px
+  display block
+  margin auto
+  background-color black
+  -webkit-box-shadow -1px 6px 10px -4px rgba(0,0,0,0.62)
+  -moz-box-shadow -5px 6px 10px -4px rgba(0,0,0,0.62)
+  box-shadow -5px 6px 10px -4px rgba(0,0,0,0.62)
+  color white
+  cursor pointer
+  transition box-shadow 100ms
+  text-transform lowercase
+
+  &:hover
+    -webkit-box-shadow -5px 10px 23px -4px rgba(0,0,0,0.62)
+    -moz-box-shadow -5px 10px 23px -4px rgba(0,0,0,0.62)
+    box-shadow -5px 10px 23px -4px rgba(0,0,0,0.62)
+
