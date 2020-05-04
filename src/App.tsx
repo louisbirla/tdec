@@ -11,5 +11,6 @@ export const App: React.FC = () => (
     <p>
       Brought to you by the <a href='https://birla.io'>CTO of TDEC</a>
     </p>
+    <a href='https://github.com/nilaeus/tdec'>github</a>
   </main>
 )
