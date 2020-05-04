@@ -8,6 +8,8 @@ export const App: React.FC = () => (
     <h1>TDEC Generator</h1>
     <p>Experience unlimitdec power</p>
     <Input />
-    <p>Brought to you by the CTO of TDEC</p>
+    <p>
+      Brought to you by the <a href='https://birla.io'>CTO of TDEC</a>
+    </p>
   </main>
 )
